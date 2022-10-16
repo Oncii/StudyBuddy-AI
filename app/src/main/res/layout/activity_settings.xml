@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/settings_appBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:transitionName="set_trans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="right"
+        android:background="#CED7E6">
+
+        <Toolbar
+            android:id="@+id/settings_title"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/settings_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="608dp"
+        android:background="#C5C5C5"
+        android:fontFamily="@font/ubuntu"
+        android:paddingStart="12sp"
+        android:text="General"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_appBar2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/settings_edit_btn"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_btn_round"
+        android:text="Edit Profile"
+        android:paddingStart="20dp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#C5C5C5"
+        android:textSize="20sp"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_location"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/settings_about_btn"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_btn_round"
+        android:text="About Application"
+        android:paddingStart="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#C5C5C5"
+        android:textSize="20sp"
+        android:fontFamily="@font/ubuntu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_edit_btn"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/settings_logout_btn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_logout_btn"
+        android:fontFamily="@font/ubuntu"
+        android:text="Logout"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_about_btn"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/settings_back"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_logout_btn"
+        android:text="Go Back"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_about_btn"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/settings_app_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Ver. 000001-alpha"
+        android:textColor="#B8B8B8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_logout_btn"
+        app:layout_constraintVertical_bias="0.956" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

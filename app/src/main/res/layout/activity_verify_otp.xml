@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    tools:context=".VerifyOTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_pin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="Confirm PIN"
+            android:textSize="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="A PIN has been sent to your phone. Please enter to proceed."
+            android:textAlignment="center" />
+
+        <com.chaos.view.PinView
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#EFEFEF"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="55dp"
+            app:itemRadius="14dp"
+            app:itemWidth="50dp"
+            app:lineColor="#787878" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="48dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Cancel"
+                android:id="@+id/pin_cancel"
+                android:fontFamily="@font/ubuntu"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_button"
+                android:text="Verify"
+                android:id="@+id/pin_verify"
+                android:layout_toRightOf="@+id/pin_cancel"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/ubuntu"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
